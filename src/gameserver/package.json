@@ -1,0 +1,21 @@
+{
+  "name": "warkle_gameserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tscw": "tsc -w"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@types/bluebird": "^3.0.35",
+    "@types/express": "^4.0.33",
+    "bluebird": "^3.4.6",
+    "express": "^4.15.2",
+    "nodemon": "^1.10.2",
+    "typescript": "^2.2.1"
+  }
+}
