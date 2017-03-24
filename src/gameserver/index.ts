@@ -7,6 +7,6 @@ import {getRuleSet} from "./game/scoring/RuleSetFactory";
  */
 
 
-let ruleSet = getRuleSet(["ThreeOfAKind","FourOfAKind"],[{onesMultiplier: 10, generalMultiplier:100}, {}]);
+let ruleSet = getRuleSet(["ThreePair"],[{value: 1000, length:1}, {value:222}]);
 
-console.log(ruleSet.getScore([2,2,2,2]));
+console.log(ruleSet.getScore([4,4,6,6,6,6]));

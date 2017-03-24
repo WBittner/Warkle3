@@ -2,6 +2,10 @@ import {RuleOptions, Rule} from "./Rule";
 import {ThreeOfAKind} from "./rules/ThreeOfAKind";
 import {RuleSet} from "./RuleSet";
 import {FourOfAKind} from "./rules/FourOfAKind";
+import {One} from "./rules/One";
+import {Five} from "./rules/Five";
+import {Straight} from "./rules/Straight";
+import {ThreePair} from "./rules/ThreePair";
 
 /**
  *  Factory that will return rule sets for which to score games
@@ -22,5 +26,9 @@ export function getRuleSet(ruleNames: string[], ruleOptions: RuleOptions[]): Rul
 
 const RULE_LIST: { [key:string]: new() => Rule } = {
     [ThreeOfAKind.NAME]: ThreeOfAKind,
-    [FourOfAKind.NAME]: FourOfAKind
+    [FourOfAKind.NAME]: FourOfAKind,
+    [One.NAME]: One,
+    [Five.NAME]: Five,
+    [Straight.NAME]: Straight,
+    [ThreePair.NAME]: ThreePair
 };

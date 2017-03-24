@@ -4,6 +4,8 @@
  *
  *  NOTE: Rules shall NOT consider subsets in the score. E.g. a rule to score 3 of a kind shall find [6,6,6,6]
  *  to be worth 0 points.
+ *
+ *  http://www.dicegamedepot.com/farkle-rules
  */
 export abstract class Rule {
     constructor(public name: string) {}
